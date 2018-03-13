@@ -1,0 +1,7 @@
+<h1>Review in <%= @patient.name %></h1>
+<p>
+<b>Review details:</b>
+<%= @patient.details %>
+</p>
+<%= link_to 'Edit', edit_patient_review_path(@patient, @review) %> |
+<%= link_to 'Back', patient_reviews_path(@patients) %>
